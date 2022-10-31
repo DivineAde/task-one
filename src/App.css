@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#profile_img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+
+#twitter{
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+
+#slack{
+  display: none;
+}
+
+#btn-twitter, #btn_zuri, #books, #book_python, #pitch, #book_design{
+  padding: 24px 32px 24px 32px;
+  width: 80%;
+  background-color: #EAECF0;
+  color: #000;
+  border: none;
+  margin: 10px 0 7px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#socials{
+  display: flex;
+  gap: 30px;
+  margin: 30px 0 80px 0;
+}
+
+.Footer{
+  margin-top: 50px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer_bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.share{
+  position: absolute;
+  top: 3%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.sharemd{
+  display: none;
+}
+
+.error{
+  padding: 200px 100px 100px 100px;
+}
+.error_message{
+  color: #5925DC;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.error_btn{
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.home_btn{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #693BEF;
+  color: #fff;
+  border: 1px solid #693BEF;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back_btn{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width:768px){
+  .share{
+    display: none;
+  }
+  .sharemd{
+  display: block;
+  position: absolute;
+  top: 3%;
+  right: 5%;
+  cursor: pointer;
+  }
+  .bottom{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .error{
+    padding: 100px 20px;
+  }
+  .error_btn{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .back_btn{
+    width: 100%;
+  }
+
+  .home_btn{
+    width: 100%;
+  }
+}
